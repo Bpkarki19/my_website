@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <style>
+    .my-container1{
+      height:500px;
+      background: #0099ff;
+      /*border: 1px solid red;*/
+    }
+    .my-container2{
+      height: 500px;
+      background: #0099ff;
+      /*border: 1px solid red;*/
+    }
+    .h1{
+      font-family: 'Potta One', cursive;
+    }
+    .btn-space{
+      margin-right: 5px;
+    }
+    .footer-col{
+      height: 50px;
+      background: none;
+      /*border: 5px solid #ff0000;*/
+    }
+    .my-container1.p1{
+      font-family: 'Hachi Maru Pop', cursive;
+      font-size: 5rem;
+    }
+    .ul{
+      background: #000;
+    }
+    a:link{
+      text-decoration: none;
+      color: red;
+    }
+    .navbar.navbar-brand a{
+      padding: 1rem;
+      display: block;
+      /*text-decoration: ;*/
+    }
+    .slider-img{
+      padding: 2rem;
+      height: 475px;
+      width: 100%;
+    }
+  </style>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>MY stylish blog</title>
+  </head>
+  <body>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">5Minutes with Bipin</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- starting ul -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- home  -->
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <!-- Buy -->
+            <li class="nav-item">
+              <a class="nav-link" href="buy.html">Shop</a>
+            </li>
+             <!--order-->
+             <li class="nav-item">
+              <a class="nav-link" href="order.html">Order</a>
+            </li>
+             <!--free products-->
+             <li class="nav-item">
+              <a class="nav-link" href="#">Free products</a>
+            </li>
+            <!--tutorial-->
+             <li class="nav-item">
+              <a class="nav-link" href="https://bit.ly/3iQYlL9">Tutorials</a>
+            </li>
+            <!--Blog-->
+             <li class="nav-item">
+              <a class="nav-link" href="https://bit.ly/368dXoE">Blog</a>
+            </li>
+            <!--social media-->
+             <li class="nav-item">
+              <a class="nav-link" href="socialmedia.html">Social Media</a>
+            </li>
+             <!--Signup-->
+             <li class="nav-item">
+              <a class="nav-link" href="signup.html">Signup</a>
+            </li>
+             <!--login-->
+             <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+          <!-- finished ul -->
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--first container-->
+    <div class="container-fluid my-container1">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- slider -->
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- images 1 in slider -->
+                {% load static %}
+                <img src="{% static 'webapp/slider.jpg' %}" alt="My image"> <!-- worked-->
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>We make website for u</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!-- images 2 in slider -->
+                <img src="{% static 'webapp/slider22.jpg' %}" alt="My image"> <!-- worked-->
+                <div class="carousel-caption d-none d-md-block">
+                  <h6>We do host for you.</h6>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!-- images 3 in slider -->
+                <img src="C:\Users\user\Desktop\frontend\img\social.jpg" class="slider-img" alt=""> {% comment %} must edit {% endcomment %}
+                <div class="carousel-caption d-none d-md-block">
+                  <h7>We buy/sell social media from/for you</h7>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+          <!-- slider end -->
+        </div>
+      </div>
+    </div>
+    <!--svg-->
+    <div class="wavei">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L21.8,208C43.6,192,87,160,131,149.3C174.5,139,218,149,262,138.7C305.5,128,349,96,393,101.3C436.4,107,480,149,524,186.7C567.3,224,611,256,655,229.3C698.2,203,742,117,785,69.3C829.1,21,873,11,916,26.7C960,43,1004,85,1047,128C1090.9,171,1135,213,1178,229.3C1221.8,245,1265,235,1309,197.3C1352.7,160,1396,96,1418,64L1440,32L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path></svg>
+    </div>
+    <!--svg-->
+    <div class="waveii">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L21.8,208C43.6,192,87,160,131,149.3C174.5,139,218,149,262,138.7C305.5,128,349,96,393,101.3C436.4,107,480,149,524,186.7C567.3,224,611,256,655,229.3C698.2,203,742,117,785,69.3C829.1,21,873,11,916,26.7C960,43,1004,85,1047,128C1090.9,171,1135,213,1178,229.3C1221.8,245,1265,235,1309,197.3C1352.7,160,1396,96,1418,64L1440,32L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg>
+    </div>
+    <!--second container-->
+    <div class="container-fluid my-container2">
+      <div class="row">
+        <div class="col-lg-12">
+        <p> {{text}} </p>
+      </div>
+    </div>
+    <!-- Footer -->
+<footer class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer Content</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+          voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">link</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark">Contact us</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Follow us</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">useful links</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">subscribe us</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2021 Copyright:
+    <a class="text-dark" href="https://">5minuteswithBipin.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
